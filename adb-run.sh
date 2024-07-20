@@ -4,4 +4,4 @@ act=$(aapt dump badging $1|awk -F" " '/launchable-activity/ {print $2}'|awk -F"'
 pkg_ver=$( echo "$pkg.$ver")
 echo "Running package: $pkg ver: $ver with activity: $act"
 # adb shell am start -n $pkg/$act
-adb shell monkey -p $pkg -c android.intent.category.LAUNCHER 1
+adb shell monkey --pct-syskeys 0 -p $pkg -c android.intent.category.LAUNCHER 1
