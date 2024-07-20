@@ -21,7 +21,7 @@ on:
 env:
   avd_port: 9999
   avd_name: localhost:9999
-  default_apk_zip_url: https://github.com/clearbluejar/apk-install/releases/download/v0.0.1/example.apk.zip
+  default_apk_zip_url: https://github.com/1uka/apk-install-extract/releases/download/0.0.1/example.apk.zip
   all_apk_dir: all_apks
 
 jobs:
