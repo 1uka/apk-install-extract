@@ -97,7 +97,7 @@ jobs:
           
       - name: adb start main activity
         run: |                    
-          # adb -s localhost:5555 shell am start -n com.whatsapp/com.whatsapp.Main          
+          # adb -s localhost:5555 shell am start -n com.instagram.android/com.instagram.mainactivity.LauncherActivity
           ./adb-run.sh "${{matrix.apkpath}}"
 
       - name: get package name ver
